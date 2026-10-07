@@ -1,0 +1,14 @@
+# Claude / editor
+.claude/
+CLAUDE.md
+.vscode/
+.idea/
+
+# Source files kept locally (originals of assets/)
+atakandivan_cv*.pdf
+WhatsApp Image*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

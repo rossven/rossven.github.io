@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atakan Divan — Software Developer</title>
+  <meta name="description" content="Atakan Divan — Java & Spring Boot ile mikroservis ve yüksek erişilebilirlikli backend sistemleri geliştiren yazılım geliştirici.">
+  <meta property="og:title" content="Atakan Divan — Software Developer">
+  <meta property="og:description" content="Java, Spring Boot, mikroservisler, PostgreSQL, Docker & Kubernetes.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1f1f1f">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top-right controls -->
+  <div class="top-controls">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="tr">TR</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Overlay menu -->
+  <nav class="overlay-menu" aria-hidden="true">
+    <div class="overlay-inner">
+      <p class="overlay-label" data-i18n="menu.label">Menu</p>
+      <ul>
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#resume" data-i18n="nav.resume">Resume</a></li>
+        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <p class="overlay-label" data-i18n="menu.social">Social</p>
+      <div class="overlay-social">
+        <a href="https://github.com/rossven" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/atakandivan/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:atakandivan@gmail.com">E-mail</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Right side dot navigation -->
+  <nav class="side-nav" aria-label="Sections">
+    <a href="#home" data-tip-key="nav.home" class="active"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></a>
+    <a href="#about" data-tip-key="nav.about"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg></a>
+    <a href="#resume" data-tip-key="nav.resume"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></a>
+    <a href="#services" data-tip-key="nav.services"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h16"/></svg></a>
+    <a href="#skills" data-tip-key="nav.skills"><svg viewBox="0 0 24 24"><circle cx="7" cy="16" r="4"/><circle cx="17" cy="16" r="4"/><path d="M12 3l3 6H9z"/></svg></a>
+    <a href="#portfolio" data-tip-key="nav.portfolio"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></a>
+    <a href="#contact" data-tip-key="nav.contact"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+  </nav>
+
+  <!-- Profile card -->
+  <aside class="profile-card">
+    <div class="card-head">
+      <a href="#home" class="logo">Atakan<span class="logo-mark">D</span></a>
+      <p class="card-role" data-i18n-html="card.role">Software<br>Developer</p>
+    </div>
+    <div class="card-photo">
+      <img src="assets/profile.jpg" alt="Atakan Divan" width="920" height="800">
+    </div>
+    <p class="card-mail"><a href="mailto:atakandivan@gmail.com">atakandivan@gmail.com</a></p>
+    <p class="card-loc" data-i18n="card.location">Based in Ankara, Türkiye</p>
+    <p class="card-copy">© <span class="year">2026</span> Atakan Divan. <span data-i18n="card.rights">All Rights Reserved</span></p>
+    <div class="card-social">
+      <a href="https://github.com/rossven" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/atakandivan/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3zM9.5 9.75h3.8v1.5h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v5.46h-4v-4.84c0-1.15-.02-2.64-1.6-2.64-1.62 0-1.86 1.26-1.86 2.56v4.92h-4z"/></svg>
+      </a>
+      <a href="mailto:atakandivan@gmail.com" aria-label="E-mail">
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      </a>
+    </div>
+    <a href="#contact" class="btn-primary">
+      <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      <span data-i18n="card.hire">Hire me!</span>
+    </a>
+    <a href="assets/atakan-divan-cv.pdf" class="card-cv" download>
+      <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 21h16"/></svg>
+      <span data-i18n="card.cv">Download CV</span>
+    </a>
+  </aside>
+
+  <main class="content">
+
+    <!-- INTRO -->
+    <section id="home" class="section intro">
+      <span class="pill reveal"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span data-i18n="intro.pill">Introduce</span></span>
+      <h1 class="reveal" data-i18n-html="intro.title">Say Hi from <span class="accent">Atakan</span>, Software Developer</h1>
+      <p class="lead reveal" data-i18n="intro.text">I build scalable, high-availability backend systems with Java &amp; Spring Boot.</p>
+
+      <a href="#portfolio" class="circle-link reveal" aria-label="Projects">
+        <svg class="circle-text" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circlePath" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text><textPath href="#circlePath" textLength="484" lengthAdjust="spacing" data-i18n="intro.circle">MY PROJECTS • MY PROJECTS • MY PROJECTS •</textPath></text>
+        </svg>
+        <svg class="circle-arrow" viewBox="0 0 24 24"><path d="M12 4v16m0 0 6-6m-6 6-6-6"/></svg>
+      </a>
+
+      <div class="stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="4">4</span><span class="stat-plus">+</span>
+          <p data-i18n-html="intro.stat1">Years of<br>experience</p>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="3">3</span>
+          <p data-i18n-html="intro.stat2">Companies &amp;<br>institutions</p>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="20">20</span><span class="stat-plus">+</span>
+          <p data-i18n-html="intro.stat3">Technologies<br>in production</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <span class="pill reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg><span data-i18n="about.pill">About</span></span>
+      <h2 class="reveal" data-i18n-html="about.title">Every great system begins with an even <span class="accent">better architecture</span></h2>
+      <p class="reveal" data-i18n="about.p1">I'm a software engineer experienced in microservice architectures and container-based systems running in production.</p>
+      <p class="reveal" data-i18n="about.p2">I graduated from Ankara University, Computer Engineering.</p>
+      <div class="languages reveal">
+        <h3 data-i18n="about.langTitle">Languages</h3>
+        <ul>
+          <li><strong data-i18n="about.lang.tr">Turkish</strong><span data-i18n="about.lang.native">Native</span></li>
+          <li><strong data-i18n="about.lang.en">English</strong><span>B2+</span></li>
+          <li><strong data-i18n="about.lang.nl">Dutch</strong><span>A1</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section">
+      <span class="pill reveal"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg><span data-i18n="resume.pill">Resume</span></span>
+      <h2 class="reveal" data-i18n-html="resume.title">Education &amp; <span class="accent">Experience</span></h2>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <span class="tl-date" data-i18n="resume.j1.date">Mar 2025 – Present</span>
+          <h3 data-i18n="resume.j1.role">Senior Software Developer</h3>
+          <p class="tl-org">GIB Teknoloji</p>
+          <p class="tl-desc" data-i18n="resume.j1.desc">Working on the renewal of VEDOP.</p>
+          <ul class="tl-list">
+            <li data-i18n="resume.j1.b1"></li>
+            <li data-i18n="resume.j1.b2"></li>
+            <li data-i18n="resume.j1.b3"></li>
+            <li data-i18n="resume.j1.b4"></li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-date" data-i18n="resume.j2.date">May 2022 – Oct 2024</span>
+          <h3 data-i18n="resume.j2.role">Full-stack Software Developer</h3>
+          <p class="tl-org">tomboPrint</p>
+          <p class="tl-desc" data-i18n="resume.j2.desc"></p>
+          <ul class="tl-list">
+            <li data-i18n="resume.j2.b1"></li>
+            <li data-i18n="resume.j2.b2"></li>
+            <li data-i18n="resume.j2.b3"></li>
+            <li data-i18n="resume.j2.b4"></li>
+            <li data-i18n="resume.j2.b5"></li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-date" data-i18n="resume.j3.date">Nov 2019 – May 2020</span>
+          <h3 data-i18n="resume.j3.role">Part-time Software Engineer</h3>
+          <p class="tl-org" data-i18n="resume.j3.org">Ankara University Faculty of Engineering</p>
+          <p class="tl-desc" data-i18n="resume.j3.desc"></p>
+          <ul class="tl-list">
+            <li data-i18n="resume.j3.b1"></li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <span class="tl-date">2018 – 2022</span>
+          <h3 data-i18n="resume.edu.role">B.Sc. Computer Engineering</h3>
+          <p class="tl-org" data-i18n="resume.edu.org">Ankara University</p>
+          <p class="tl-desc" data-i18n="resume.edu.desc">GPA 3.57 / 4.00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <span class="pill reveal"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h16"/></svg><span data-i18n="services.pill">Services</span></span>
+      <h2 class="reveal" data-i18n-html="services.title">My <span class="accent">Specializations</span></h2>
+
+      <div class="services">
+        <article class="service reveal">
+          <div class="service-top">
+            <h3 data-i18n="services.s1.title">Backend &amp; Microservices</h3>
+            <svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></svg>
+          </div>
+          <p data-i18n="services.s1.text"></p>
+          <span class="service-tags" lang="en">Java · Spring Boot · Kafka · RabbitMQ</span>
+        </article>
+        <article class="service reveal">
+          <div class="service-top">
+            <h3 data-i18n="services.s2.title">Data &amp; Performance</h3>
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+          </div>
+          <p data-i18n="services.s2.text"></p>
+          <span class="service-tags" lang="en">PostgreSQL · Redis · MongoDB · JPA</span>
+        </article>
+        <article class="service reveal">
+          <div class="service-top">
+            <h3 data-i18n="services.s3.title">DevOps &amp; CI/CD</h3>
+            <svg viewBox="0 0 24 24"><path d="M12 2c3 2 5 5.5 5 10l-2 4H9l-2-4c0-4.5 2-8 5-10Z"/><circle cx="12" cy="10" r="2"/><path d="M9 16l-2 5 3-2M15 16l2 5-3-2"/></svg>
+          </div>
+          <p data-i18n="services.s3.text"></p>
+          <span class="service-tags" lang="en">Docker · Kubernetes · Jenkins · Linux</span>
+        </article>
+        <article class="service reveal">
+          <div class="service-top">
+            <h3 data-i18n="services.s4.title">Frontend Development</h3>
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8M12 18v3"/></svg>
+          </div>
+          <p data-i18n="services.s4.text"></p>
+          <span class="service-tags" lang="en">React · Angular · HTML · CSS</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <span class="pill reveal"><svg viewBox="0 0 24 24"><circle cx="7" cy="16" r="4"/><circle cx="17" cy="16" r="4"/><path d="M12 3l3 6H9z"/></svg><span data-i18n="skills.pill">My Skills</span></span>
+      <h2 class="reveal" data-i18n-html="skills.title">My <span class="accent">Toolbox</span></h2>
+
+      <div class="skill-group reveal">
+        <h3 data-i18n="skills.g1">Languages</h3>
+        <div class="skills" lang="en">
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt="" loading="lazy"><span>Java</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="" loading="lazy"><span>Python</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" loading="lazy"><span>JavaScript</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/cplusplus/cplusplus-original.svg" alt="" loading="lazy"><span>C++</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/c/c-original.svg" alt="" loading="lazy"><span>C</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/csharp/csharp-original.svg" alt="" loading="lazy"><span>C#</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 data-i18n="skills.g2">Backend &amp; Messaging</h3>
+        <div class="skills" lang="en">
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/spring/spring-original.svg" alt="" loading="lazy"><span>Spring Boot</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/hibernate/hibernate-original.svg" alt="" loading="lazy" class="invert"><span>Hibernate / JPA</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/apachekafka/apachekafka-original.svg" alt="" loading="lazy" class="invert"><span>Kafka</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/rabbitmq/rabbitmq-original.svg" alt="" loading="lazy"><span>RabbitMQ</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/swagger/swagger-original.svg" alt="" loading="lazy"><span>Swagger</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/junit/junit-original.svg" alt="" loading="lazy"><span>JUnit</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 data-i18n="skills.g3">Data</h3>
+        <div class="skills" lang="en">
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt="" loading="lazy"><span>PostgreSQL</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/redis/redis-original.svg" alt="" loading="lazy"><span>Redis</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mongodb/mongodb-original.svg" alt="" loading="lazy"><span>MongoDB</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 data-i18n="skills.g4">DevOps &amp; Tools</h3>
+        <div class="skills" lang="en">
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt="" loading="lazy"><span>Docker</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/kubernetes/kubernetes-original.svg" alt="" loading="lazy"><span>Kubernetes</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jenkins/jenkins-original.svg" alt="" loading="lazy"><span>Jenkins</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="" loading="lazy"><span>Git</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/linux/linux-original.svg" alt="" loading="lazy"><span>Linux</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/maven/maven-original.svg" alt="" loading="lazy"><span>Maven</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/gradle/gradle-original.svg" alt="" loading="lazy" class="invert"><span>Gradle</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jira/jira-original.svg" alt="" loading="lazy"><span>Jira</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 data-i18n="skills.g5">Frontend</h3>
+        <div class="skills" lang="en">
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt="" loading="lazy"><span>React</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/angular/angular-original.svg" alt="" loading="lazy"><span>Angular</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="" loading="lazy"><span>HTML</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="" loading="lazy"><span>CSS</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
+      <span class="pill reveal"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span data-i18n="portfolio.pill">Portfolio</span></span>
+      <h2 class="reveal" data-i18n-html="portfolio.title">Featured <span class="accent">Projects</span></h2>
+
+      <div class="projects">
+        <article class="project project-wide reveal">
+          <div class="project-visual v1">
+            <div class="mock">
+              <div class="mock-bar"><i></i><i></i><i></i><span>vedop / tax-office-service</span></div>
+              <pre><code><span class="c-k">@RestController</span>
+<span class="c-k">@RequestMapping</span>(<span class="c-s">"/api/v1/taxpayers"</span>)
+<span class="c-k">public class</span> TaxpayerController {
+  <span class="c-k">@GetMapping</span>(<span class="c-s">"/{id}"</span>)
+  <span class="c-k">@Cacheable</span>(<span class="c-s">"taxpayers"</span>)
+  <span class="c-k">public</span> TaxpayerDto get(<span class="c-k">@PathVariable</span> Long id) {
+    <span class="c-k">return</span> service.findById(id);
+  }
+}</code></pre>
+            </div>
+            <div class="project-tags" lang="en"><span>Spring Boot</span><span>PostgreSQL</span><span>Redis</span><span>Angular</span><span>Jenkins</span></div>
+          </div>
+          <h3>VEDOP — <span data-i18n="portfolio.p1.title">Tax Offices Full Automation Program</span></h3>
+          <p data-i18n="portfolio.p1.text"></p>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-visual v2">
+            <div class="fleet">
+              <div class="fleet-node on"></div><div class="fleet-node on"></div><div class="fleet-node"></div>
+              <div class="fleet-node on"></div><div class="fleet-node warn"></div><div class="fleet-node on"></div>
+              <div class="fleet-node on"></div><div class="fleet-node on"></div><div class="fleet-node on"></div>
+            </div>
+            <div class="project-tags" lang="en"><span>Spring Boot</span><span>React</span><span>Docker</span></div>
+          </div>
+          <h3>tomboPrint</h3>
+          <p data-i18n="portfolio.p2.text"></p>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-visual v3">
+            <div class="bars">
+              <i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:50%"></i><i style="--h:85%"></i><i style="--h:70%"></i><i style="--h:95%"></i>
+            </div>
+            <div class="project-tags" lang="en"><span>JavaScript</span><span>UI</span></div>
+          </div>
+          <h3 data-i18n="portfolio.p3.title">Academic Data Management System</h3>
+          <p data-i18n="portfolio.p3.text"></p>
+        </article>
+
+        <a class="project project-wide project-more reveal" href="https://github.com/rossven" target="_blank" rel="noopener">
+          <div class="more-inner">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            <div>
+              <h3 data-i18n="portfolio.more.title">More on GitHub</h3>
+              <p>github.com/rossven</p>
+            </div>
+            <svg class="more-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <span class="pill reveal"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span data-i18n="contact.pill">Contact</span></span>
+      <h2 class="reveal" data-i18n-html="contact.title">Let's Work <span class="accent">Together!</span></h2>
+      <a class="contact-mail reveal" href="mailto:atakandivan@gmail.com">atakandivan@gmail.com</a>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label for="f-name" data-i18n="contact.name">Full name *</label>
+          <input id="f-name" name="name" type="text" required autocomplete="name" data-i18n-ph="contact.namePh">
+        </div>
+        <div class="field">
+          <label for="f-email" data-i18n="contact.email">Email *</label>
+          <input id="f-email" name="email" type="email" required autocomplete="email" data-i18n-ph="contact.emailPh">
+        </div>
+        <div class="field field-full">
+          <label for="f-subject" data-i18n="contact.subject">Subject *</label>
+          <input id="f-subject" name="subject" type="text" required data-i18n-ph="contact.subjectPh">
+        </div>
+        <div class="field field-full">
+          <label for="f-msg" data-i18n="contact.message">Message</label>
+          <textarea id="f-msg" name="message" rows="5" data-i18n-ph="contact.messagePh"></textarea>
+        </div>
+        <div class="field-full form-foot">
+          <button type="submit" class="btn-primary btn-inline" data-i18n="contact.send">Send message</button>
+          <p class="form-note" data-i18n="contact.note">This opens your email app.</p>
+        </div>
+        <p class="form-error field-full" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>© <span class="year">2026</span> Atakan Divan · <span data-i18n="footer.text">Designed &amp; built with care.</span></p>
+    </footer>
+  </main>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
